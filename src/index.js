@@ -20,7 +20,6 @@ const useCountReducer = (initialState = { count: 1 }) => {
   const DEC = "DEC";
 
   const [state, dispatch] = useReducer((state, action) => {
-    console.log("switch", action);
     switch (action.type) {
       case INC:
         return { ...state, count: state.count + 1 };
